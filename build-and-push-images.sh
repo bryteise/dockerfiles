@@ -26,6 +26,7 @@ build_and_push_image() {
 main() {
     local ver="$1"
     build_and_push_image os-core "${ver}"
+    build_and_push_image nginx "${ver}"
 }
 
 main $1
